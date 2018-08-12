@@ -10,9 +10,7 @@ var talkingCalendar = function(date) {
   var monthResult = months[month]; // calling months with month variable
   var lastChar = day.slice(1); // spliting day digits
 
-
-
-if (day === "11" && "12" && "13") {
+if (day === "11" && "12" && "13") { //statments for suffix
 	var result = "th";
 
 } else if (lastChar === "1"){
@@ -26,6 +24,7 @@ if (day === "11" && "12" && "13") {
 } 
 
 var days = day/1 + result;
+
 return monthResult + " " + days + ", " + year;
 };
 
